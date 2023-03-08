@@ -1,0 +1,3 @@
+
+applicationSettings:
+  initialModel: "https://hvassistant.blob.core.windows.net/conva/model.tar.gz?raw=true"
