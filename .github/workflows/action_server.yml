@@ -3,7 +3,7 @@ on:
     branches:
       - main
     paths:
-    - 'assistant/actions/**'
+    - 'HVA/assistant/actions/**'
 
 jobs:
   build_and_deploy:
