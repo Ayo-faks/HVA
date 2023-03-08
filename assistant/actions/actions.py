@@ -191,7 +191,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 retriever = SentenceTransformer("flax-sentence-embeddings/all_datasets_v3_mpnet-base", device=device)
 retriever
 
-# load bart tokenizer and model from huggingface hub
+# load bart tokenizer and model from huggingface
 tokenizer = BartTokenizer.from_pretrained('vblagoje/bart_lfqa')
 generator = BartForConditionalGeneration.from_pretrained('vblagoje/bart_lfqa').to(device)
 
