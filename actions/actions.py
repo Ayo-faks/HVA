@@ -185,7 +185,7 @@ from transformers import BartTokenizer, BartForConditionalGeneration
 import torch
 from sentence_transformers import SentenceTransformer
 
-# set device to GPU if available
+# set device to GPU if it is available
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 # load the retriever model from huggingface model hub
 retriever = SentenceTransformer("flax-sentence-embeddings/all_datasets_v3_mpnet-base", device=device)
