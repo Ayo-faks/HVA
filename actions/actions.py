@@ -239,7 +239,7 @@ def query_pinecone(query, top_k):
 def format_query(query, context):
     # extract passage_text from Pinecone search results and add the <P> tag
     context = [f"<P> {m['metadata']['text']}" for m in context]
-    # concatinate all context passage
+    # concatinate all context passages
     context = " ".join(context)
     # contcatinate the query and context passages
     query = f"question: {query} context: {context}"
