@@ -31,7 +31,6 @@ jobs:
           docker_image_tag: 1
           # Push a docker image to the registry. If `False` the user can add manual extra steps in their workflow which use the built image.
           docker_registry_push: true
-          # Path to a custom Dockerfile.
-          dockerfile: Dockerfile
+      
           # Version of the Rasa SDK which should be used to build the image.
           rasa_sdk_version: latest
