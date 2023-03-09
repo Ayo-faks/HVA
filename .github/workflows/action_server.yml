@@ -18,7 +18,7 @@ jobs:
       uses: RasaHQ/action-server-gha@main
       # Full list of parameters: https://github.com/RasaHQ/action-server-gha/tree/master#input-arguments
       with:
-        requirements_file: ./actions/requirements-actions.txt
+        requirements_file: ./actions/requirements.txt
         actions_directory: ./actions
         docker_image_name: ${{ secrets.DOCKER_HUB_LOGIN }}/hva_action_server
         docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
