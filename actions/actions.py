@@ -230,7 +230,7 @@ retriever, generator = init_models()
 index = init_pinecone()
 
 def query_pinecone(query, top_k):
-    # generate embeddings for the query
+    # generate embeddings for the querys
     xq = retriever.encode([query]).tolist()
     # search pinecone index for context passage with the answer
     xc = index.query(xq, top_k=top_k, include_metadata=True)
