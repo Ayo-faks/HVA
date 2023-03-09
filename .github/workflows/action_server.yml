@@ -26,7 +26,7 @@ jobs:
           # Password for the Docker registry.
           docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
           # Docker image name.
-          docker_image_name: ${{ secrets.DOCKER_HUB_LOGIN }}/helpdesk_action_server
+          docker_image_name: ${{ secrets.DOCKER_HUB_LOGIN }}/hva_action_server
           # Docker image tag.
           docker_image_tag: 1
           # Push a docker image to the registry. If `False` the user can add manual extra steps in their workflow which use the built image.
