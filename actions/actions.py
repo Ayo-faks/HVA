@@ -277,7 +277,7 @@ class ActionGenAnswer(Action):
             
             
         
-            # genrate answer from LLM model
+            # genrate answer from LLM models
             answer = generator.generate(query, min_length=min_length, max_length=max_length)
         
            
