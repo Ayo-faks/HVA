@@ -24,7 +24,7 @@ jobs:
           # Login name for the Docker registry.
           docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
           # Password for the Docker registry.
-          docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORDs }}
+          docker_registry_password: ${{ secrets.DOCKERHUB_TOKEN }}
           # Docker image name.
           docker_image_name: ${{ secrets.DOCKER_HUB_LOGIN }}/hva_action_server
           # Docker image tag.
