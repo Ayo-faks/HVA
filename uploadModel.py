@@ -29,7 +29,7 @@ blob_service_client = BlobServiceClient.from_connection_string(connection_string
 container_name = 'conva'
 model_path = '/workspace/HVA/assistant/models/20230306-162155-numerous-expenditure.tar.gz'
 
-# Get a BlobClient object for the new blob
+# Get a BlobClient object for the new blob blob
 blob_client = blob_service_client.get_blob_client(container_name, 'model.tar.gz')
 
 # Upload the Rasa trained model to Azure Blob Storage
